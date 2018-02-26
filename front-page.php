@@ -90,7 +90,7 @@
 
 
 <!-- Fotos -->
-<div class="bg-blue">
+<div class="bg-green">
     <div class="container tips">
 
     <div class="row">
@@ -157,7 +157,7 @@
     <div class="row">
         <div class="col-lg-12">
             <?php get_template_part('home','noticias' ); ?>
-            <a href="/blog/" class="btn btn-home verde">Ver m&aacute;s noticias</a>
+            <a href="/noticias/" class="btn btn-home fucsia">Ver m&aacute;s noticias</a>
         </div>
     </div>
 
