@@ -73,7 +73,7 @@ add_action('init', 'ag_menus');
 /* Tamaño de imagenes */
 if ( function_exists( 'add_image_size' ) ) {  
 	add_image_size('thumb_areas', 300, 90, true); 
-	add_image_size('home_blog', 240, 200, true); 
+	add_image_size('home_blog', 300, 180, true); 
 	add_image_size('home_servicios', 200, 140, true);
     add_image_size('categoria_blog', 750, 300, true);  
     add_image_size('blog_ampliada', 750, 500, true);
@@ -90,6 +90,13 @@ function ag_registrar_widgets() {
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget_title">',
 		'afet_title' => '</h3>'
+	));
+
+	register_sidebar(array(
+		'name' => 'Widgets Pie',
+		'id' => 'sidebar_pie',
+		'before_widget' => '<div id="%2$s" class="widget">',
+		'after_widget' => '</div>',
 	));
 
 	register_sidebar(array(

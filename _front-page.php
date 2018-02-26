@@ -23,7 +23,15 @@
 <div class="bg-green">
     <div class="container tips">
         <div class="row">
-            <?php get_template_part('home','nosotros' ); ?>
+             <div class="col-md-5">
+                <img src="http://avancegen.com/wp-content/uploads/2017/04/telemedicina.jpg">
+            </div>
+            <div class="col-md-7">
+                <ul>
+                    <li>ASESOR&Iacute;A GEN&Eacute;TICA PERSONALIZADA<br>A TRAV&Eacute;S DE TELEMEDICINA</li>
+                </ul>
+<a href="/2017/04/conozca-sobre-la-telemedicina/" class="btn btn-home verde btn-full">Conozca sobre la Telemedicina</a>
+            </div>
         </div>
     </div>
 </div>
@@ -149,7 +157,7 @@
     <div class="row">
         <div class="col-lg-12">
             <?php get_template_part('home','noticias' ); ?>
-            <center><a href="/noticias/" class="btn btn-home fucsia">Ver m&aacute;s noticias</a></center>
+            <a href="/noticias/" class="btn btn-home fucsia">Ver m&aacute;s noticias</a>
         </div>
     </div>
 

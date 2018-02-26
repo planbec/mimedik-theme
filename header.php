@@ -40,13 +40,9 @@
                     <a class="logo" href="/">
                         <img title="<?php bloginfo('name'); ?> &nbsp;|&nbsp; <?php bloginfo('description'); ?>" src="<?php echo get_template_directory_uri(); ?>/images/logo_miMedik.png">
                     </a>
-                </div>
 
-                <!-- Navigation -->
-                <div class="col-lg-12">
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-
-                     <div class="redes">
+                    <!-- Menu Redes -->
+                    <div class="redes">
                         <?php wp_nav_menu( array(
                             'menu' => 'header-menu',
                             'theme_location' => 'menu-redes',
@@ -58,6 +54,12 @@
                             'walker' => new wp_bootstrap_navwalker())
                           );?>
                      </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-lg-12">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
                         <nav >
                           <?php wp_nav_menu( array(
                             'menu' => 'header-menu',
