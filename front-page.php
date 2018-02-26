@@ -9,11 +9,11 @@
     </div>
     
 
-<!-- Texto intro -->
+<!-- Texto citas -->
 <div class="container servicios">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Aprenda como la informaci&oacute;n gen&oacute;mica impacta su salud y la de sus seres queridos</h1>
+        <?php get_template_part('home','citas' ); ?>
         </div>
     </div>
 </div>
