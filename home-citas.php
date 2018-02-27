@@ -1,22 +1,12 @@
  <div class="col-md-12">
-                <!-- Loop de wordPress -->
-                <?php while( have_posts() ) : the_post(23); ?>
+            <div class="col-md-6">
+                <h2 class="titulo-portada">Horario de atenci&oacute;n</h2>
+                <h5>de  Lunes a domingo</h5>
+                <h4>08h00 a 20h00</h4>
+                <a href="./citas/" class="btn btn-home fucsia">Reserve una cita</a>
+            </div>
 
-                    <!-- Preview Image -->
-                    <?php // validar si es post tiene imagen destacada
-                    if( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'blog_ampliada' );?>
-                    <?php endif ; ?>
-
-                    <!-- post -->
-                    <h1> <?php the_title(); ?></h1>
-
-                    <hr>
-
-                    <!-- Post Content -->
-                    <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-                <!-- Fin Loop de wordPress -->
-
+             <div class="col-md-6">
+                <img src="http://www.mimediksa.com/wp-content/uploads/2018/02/foto_doctor.jpg">
+            </div>
 </div>

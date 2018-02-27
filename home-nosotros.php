@@ -1,12 +1,11 @@
  <div class="col-md-12">
-             <div class="col-md-5">
-                <img src="http://avancegen.com/wp-content/uploads/2017/04/telemedicina.jpg">
+             <div class="col-md-7">
+                <a href="./sobre-nosotros/"><img src="http://www.mimediksa.com/wp-content/uploads/2018/02/foto_portada.jpg"></a>
             </div>
 
-            <div class="col-md-7">
-                <ul>
-                    <li>ASESOR&Iacute;A GEN&Eacute;TICA PERSONALIZADA<br>A TRAV&Eacute;S DE TELEMEDICINA</li>
-                </ul>
-                <a href="/2017/04/conozca-sobre-la-telemedicina/" class="btn btn-home verde btn-full">Conozca sobre la Telemedicina</a>
+            <div class="col-md-5">
+                <h2 class="titulo-portada">Sobre nosotros</h2>
+                <p>Del especial deseo de sus fundadores de dar a la población orense un servicio de excelencia, en un ambiente confortable y a precios accesibles, nace la idea  de desarrollar  MIMEDIK, un Centro médico de especialidades, con la posibilidad de ofrecer todos los servicios en un mismo lugar, enclavado en el corazón comercial de la Ciudad de Machala, dotado con los mejores equipos médicos y con profesionales altamente  calificados.</p>
+                <a href="./sobre-nosotros/" class="btn">Ver más</a>
             </div>
 </div>
