@@ -59,6 +59,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="titulo-portada">Testimonios</h2>
+                <?php echo do_shortcode('[social-proof-slider]'); ?>
             </div>
          </div>
     </div>
