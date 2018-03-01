@@ -68,7 +68,9 @@
 <!-- Mapa -->
 <div class="container-fluid mapa">
     <div class="row">
-        <h2 class="titulo-portada">Mapa</h2>
+        <h2 class="titulo-portada">
+            <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+        </h2>
     </div>
 
  
