@@ -13,6 +13,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* https://fontawesome.bootstrapcheatsheets.com/ */
+
 @import url("css/bootstrap.min.css");
 @import url("css/modern-business.css");
 body{font:16px 'Lato', sans-serif;padding:0;margin:0;}
@@ -39,6 +41,7 @@ visibility:visible;padding:0px 0px 0px 0px;margin:2rem auto 1rem; text-align:cen
 #mega-menu-wrap-menu-redes #mega-menu-menu-redes > li.mega-menu-item > a.mega-menu-link { margin: 0 0.5rem; }
 .btn-primary{border-radius:5px;background-color:#97c943;box-shadow:inset 0 -18px 0 rgba(0,0,0,.07);border:0;padding:1rem 2rem;margin:2rem 0;text-align:center;text-decoration:none;text-shadow:1px 1px 2px #777;}
 .btn-primary:hover{background:#75a91c;box-shadow:0px 0px 9px 0px #fbd62c;}
+
 .btn-home {
     border: 1px solid #dd1980 !important;
     border-radius: 3rem;
@@ -52,7 +55,48 @@ visibility:visible;padding:0px 0px 0px 0px;margin:2rem auto 1rem; text-align:cen
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #777;
 }
-.btn-home:hover { background:#FFF; color:#dd1980; text-shadow:none; }
+.btn-home {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.btn-home:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.btn-home:hover, .btn-home:focus, .btn-home:active {
+    color:#FFF; /*#dd1980; background:#FFF;  text-shadow:none;*/
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+.btn-home:hover:before, .btn-home:focus:before, .btn-home:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
 
 .fucsia { background: #dd1980; color:#FFF;}
 .verde{color:#FFF;background:#97c943;}
@@ -67,10 +111,24 @@ visibility:visible;padding:0px 0px 0px 0px;margin:2rem auto 1rem; text-align:cen
 h3.intro-slider{background:rgba(0,0,0,.5);color:#FFF;display:block;text-transform:uppercase;position:absolute;z-index:5000;padding:2rem;font-size:3rem;left:10%;bottom:6rem;width:30%;text-align:center;text-shadow:1px 1px 5px #333;}
 .container h2.titulo-portada{ color: #98ca43; text-transform: uppercase; text-align: center; font-weight: 600;}
 .container h2.titulo-portada-2{color:#a9a9ac;margin-bottom:0;margin-left:20rem;text-align:center;text-transform:uppercase;}
+
+
+/* Formularios */
+.fm-form {
+    border: 1px solid #ededed;
+    padding: 3rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+
 form.wp_accept_pp_button_form_classic{padding:2rem;background:#f2f2f2;border-radius:1rem;text-align:center;}
 form.wp_accept_pp_button_form_classic input,
 form.wp_accept_pp_button_form_classic select{padding:0.5rem 1rem;border-radius:0.5rem;border:1px solid #ccc;}
 form.wp_accept_pp_button_form_classic input[type="image"]{border:0;margin-top:1rem;}
+
+
 .servicios ul.col-serv{box-sizing:border-box;float:left;width:20%;padding:0 1%;margin:2rem 0 3rem;}
 .servicios ul.col-serv li{font-size:100%;list-style:none;text-align:center;}
 .servicios ul.col-serv li img{width:100%;height:auto;}
@@ -134,7 +192,7 @@ form.wp_accept_pp_button_form_classic input[type="image"]{border:0;margin-top:1r
 /* Testimonios */
 .container.testimonios h2 { color:#FFF; }
 
-aside{padding:0 2rem;}
+aside {padding:0 2rem;}
 
 /* Testimonios */
 .container.testimonios { padding:3rem 0 !important; }
@@ -211,8 +269,8 @@ footer .copy{font-size:1.5rem;}
 .container img.wp-post-image{border:1px solid #FFF; padding:0.4rem; background:#f0eeee;}
 #widget_search label.screen-reader-text{display:none;}
 #widget_search input{border-radius:6px 0 0 6px;border:1px solid #CCC;float:left;padding:0.5rem 1rem;width:75%;}
-#widget_search input#searchsubmit{border-radius:0 6px 6px 0;background-color:#98ca43;color:#FFF;font-size:1.2rem;font-weight:600;text-transform:uppercase;width:20%;}
-#widget_search input#searchsubmit:hover{background-color:#75a91c;}
+#widget_search input#searchsubmit{border-radius:0 6px 6px 0; background-color:#dd1980;color:#FFF;font-size:1.2rem;font-weight:600;text-transform:uppercase;width:20%;}
+#widget_search input#searchsubmit:hover{background-color:#a20758;}
 .redes{   
 	position: absolute;
     top:1rem;
@@ -226,9 +284,22 @@ footer .copy{font-size:1.5rem;}
 .thumbnail .caption{padding:2.5rem;color:#333;font-size:1.6rem;}
 .thumbnail .caption h4{margin:0.5rem 0;color:#0099d2;font-size:2.6rem;}
 .thumbnail img.wp-post-image{padding:0;border-radius:1rem 1rem 0 0;}
-aside h3.widget_title{color:#98ca43;text-transform:uppercase;font-size:2.2rem;font-family:'Lato', arial, sans-serif;}
-aside h3:before{content:"\f061";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#d3d3d3;font-size:2rem;padding-right:1rem;}
+aside h3.widget_title{
+    color: #0099d2;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: 'Lato', arial, sans-serif;
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 3rem;
+}
+aside h3:before{content:"\f0fa";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#0099d2;font-size:2rem;padding-right:1rem;}
 aside .widget{margin-bottom:2rem;overflow:hidden;padding:1rem 0;}
+aside .widget ul { margin: 0; padding: 0; }
+aside .widget ul li { list-style: none; }
+aside .widget ul li:before{content:"\f101";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#d3d3d3;font-size:2rem;padding-right:1rem;}
+aside .widget ul li a { color:#666; line-height:3.2rem; }
+aside .widget ul li a:hover { color:#dd1980; }
+
 aside .citas form{padding:2rem;background:#f2f2f2;border-radius:0.5rem;}
 aside .citas form input{border-radius:0.5rem;}
 div.wpforms-container-full .wpforms-form input[type=text],
