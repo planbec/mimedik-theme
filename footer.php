@@ -37,7 +37,7 @@
         <div class="container copy">
             <div class="row">
                 <div class="col-lg-9">
-                    <p><?php bloginfo('name'); ?> | Copyright &copy; Todos los derechos reservados 2018</p>
+                    <p><?php bloginfo('name'); ?> | Copyright &copy; Todos los derechos reservados <?php echo date('Y'); ?></p>
                 </div>
                 <div class="col-lg-3">
                     <p align="right">Desarrollado por: <a href="http://www.planb.ec" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_planB.png"></a></p>
