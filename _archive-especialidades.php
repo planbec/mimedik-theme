@@ -6,7 +6,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Nuestro staff</h1>
+                <h1 class="page-header">Especialidades</h1>
                 <h2>Conoce m&aacute;s sobre nuestros colaboradores</h2>
             </div>
         </div>

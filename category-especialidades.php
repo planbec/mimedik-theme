@@ -1,19 +1,17 @@
-<?php get_header(); ?>
+<?php 
+/* Template name: Categoria Blog */
+get_header(); ?>
 
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Nuestro staff</h1>
-                <h2>Conoce m&aacute;s sobre nuestros colaboradores</h2>
-            </div>
-        </div>
-        <!-- /.row -->
 
+            <!-- Blog Entries Column -->
+            <div class="col-md-12">
 
-    <!-- Loop de wordPress -->
+<h2 class="titulo-portada">Especialidades</h2>
+    <!-- Loop de wordPress 
     <?php if(have_posts() ) : while( have_posts() ) : the_post(); ?>
     
         <!-- post -->
@@ -39,13 +37,25 @@
         <?php _e('No hay post','apk_'); ?>
     
     <?php endif; ?>
-    <!-- Fin Loop de wordPress -->
+     Fin Loop de wordPress -->
 
-<br style="clear:both">
+
+
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="previous">
+                        <?php previous_posts_link('&larr; Previos'); ?>
+                    </li>
+                    <li class="next">
+                        <?php next_posts_link( 'Siguientes &rarr;'); ?>
+                    </li>
+                </ul>
+
+            </div>
+
 
         </div>
         <!-- /.row -->
-
 
         <hr>
 

@@ -36,7 +36,7 @@
             <?php get_template_part('home','noticias' ); ?>
         </div>
         <div class="col-lg-12">
-            <a href="./noticias/" class="btn btn-home fucsia">Ver m&aacute;s noticias</a>
+            <a href="./category/noticias/" class="btn btn-home fucsia">Ver m&aacute;s noticias</a>
         </div>
     </div>
 </div>

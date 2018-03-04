@@ -119,12 +119,44 @@ h3.intro-slider{background:rgba(0,0,0,.5);color:#FFF;display:block;text-transfor
 /* Formularios */
 .fm-form {
     border: 1px solid #ededed;
+    margin-bottom: 3rem;
     padding: 3rem 0;
-    border-radius: 0.5rem;
+    border-radius:3rem;
     overflow: hidden;
-    background: #f7f7f7;
+    background: #f9f9f9;
 }
 
+.fm-form label {
+    text-align: left;
+    margin-right: 0.5em;
+    display: block;
+    font-weight: 400;
+    color: #999;
+}
+
+.fm-form input, .fm-form select, .fm-form textarea {
+    margin: 3px 0px 0px 0px;
+    padding: 10px 14px;
+    border: 1px solid #DDDDDD;
+    width: 95% !important;
+    border-radius: 1.8rem;
+}
+
+.fm-form input.submit {
+    background: #dd1980;
+    border: 1px solid #FFF;
+    border-radius: 5rem;
+    color: #FFF;
+    float: none;
+    width: auto !important;
+    display: table;
+    margin: 4rem auto 2rem;
+    padding: 1rem 3rem;
+}
+
+.fm-form input.submit:hover {
+    background: #a20758;
+}
 
 form.wp_accept_pp_button_form_classic{padding:2rem;background:#f2f2f2;border-radius:1rem;text-align:center;}
 form.wp_accept_pp_button_form_classic input,
@@ -260,10 +292,10 @@ footer .copy{font-size:1.5rem;}
 .piefooter a { color:#FFF; }
 
 .container{font-size:1.8rem;line-height:2.7rem;color:#666666 !important;}
-.container h1{color:#82b946;font:600 3rem'Lato', arial, sans-serif;text-transform:uppercase;}
+.container h1{color:#82b946;font:500 3rem'Lato', arial, sans-serif;text-transform:uppercase;}
 .container h2 {color:#2d3a4b;font-family:'Lato', arial, sans-serif;font-size:2.8rem;margin-bottom:3rem;}
 .container h3 {color:#0075bb;font-size:2.7rem;font-family:'Lato', arial, sans-serif;}
-.container h4 {color:#2d3a4b;font-size:2.6rem;line-height:3rem;margin:3rem 0 2rem;}
+.container h4 {color:#82b946;font-size:2.6rem;line-height:3rem;margin:3rem 0 2rem;}
 .container p{margin:2.5rem auto 3rem;text-align:justify;width:90%;}
 .container small{color:#999;font-size:1.5rem;line-height:3rem;}
 .container small.cat a{color:#98ca43;}
