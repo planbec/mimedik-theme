@@ -334,6 +334,15 @@ aside .widget ul li { list-style: none; }
 aside .widget ul li:before{content:"\f101";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#d3d3d3;font-size:2rem;padding-right:1rem;}
 aside .widget ul li a { color:#666; line-height:3.2rem; }
 aside .widget ul li a:hover { color:#dd1980; }
+aside .widget ul.wid-contact li:before {
+    content: "\f041";
+    font-family:FontAwesome;font-style:normal;
+    font-weight:normal;
+    text-decoration:inherit;
+    color:#dd1980;
+    font-size:2rem;
+    padding-right:1rem;
+}
 
 aside .citas form{padding:2rem;background:#f2f2f2;border-radius:0.5rem;}
 aside .citas form input{border-radius:0.5rem;}

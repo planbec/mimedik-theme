@@ -7,7 +7,7 @@ get_header(); ?>
 
         <!-- Contact Form -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <!-- Loop de wordPress -->
                 <?php while( have_posts() ) : the_post(); ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
 
          <!-- Side Bar -->
-        <?php get_sidebar(); ?>
+        <?php get_sidebar('contactos'); ?>
 
         </div>
         <!-- /.row -->

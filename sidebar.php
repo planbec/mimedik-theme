@@ -5,5 +5,5 @@
 	        dynamic_sidebar('sidebar_der' );
 	    endif; 
 	?>
-</aside>
+	</aside>
 </div> 
