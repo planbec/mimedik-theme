@@ -23,7 +23,7 @@ http://astronautweb.co/snippet/font-awesome/
 body{font:16px 'Lato', sans-serif;padding:0;margin:0;}
 .container{padding:2rem 0;}
 .bg-blue{background:#0099d2;width:100%;}
-.bg-gray{background:#4d5259;width:100%;}
+.bg-gray{background:#363b42;width:100%;}
 .bg-green{background:#82b946;}
 .carousel{height:auto;}
 .page-header{border-bottom:none;}
@@ -281,10 +281,10 @@ footer .copy{font-size:1.5rem;}
 .prefooter .widget{color:#bbb;}
 .prefooter .widget a{color:#98ca43;}
 .prefooter .widget a:hover{color:#bbb;text-decoration:underline;}
-.prefooter .widget_title{color:#98ca43;font-size:2rem;text-transform:uppercase;}
+.prefooter .widget_title{color:#dd1980;font-size:2rem;text-transform:uppercase;}
 .prefooter .widget ul{margin:0;padding:0;}
 .prefooter .widget ul li{list-style:none;}
-.prefooter .widget ul li:before{content:"\f101";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#999;font-size:2rem;padding-right:0.5em;}
+.prefooter .widget ul li:before{content:"\f101";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#666;font-size:2rem;padding-right:0.5em;}
 .prefooter .widget ul li a, .prefooter .widget p { color:#ddd; font-size: 1.5rem; margin: 0;}
 .prefooter .widget ul li a:hover{color:#0099d2;text-decoration:underline;}
 .piefooter { padding: 2rem; text-align: center;}
