@@ -1,15 +1,16 @@
 <!-- Nuevo WP Query -->
-<?php $nuestros_servicios = new WP_Query(array(
-    'post_type' => 'servicios',
+<?php $servicios_medicos = new WP_Query(array(
+    'post_type' => 'especialidades',
+    'cat' => 2,
     'posts_per_page'=> 5,
     'order' => 'asc'
 ));
 
-if ( $nuestros_servicios->have_posts() ): ?>
+if ( $servicios_medicos->have_posts() ): ?>
 
 
             <!-- Verificacion del article -->
-            <?php while( $nuestros_servicios->have_posts() ): $nuestros_servicios->the_post() ?>
+            <?php while( $servicios_medicos->have_posts() ): $servicios_medicos->the_post() ?>
                 <ul class="col-serv">
                     <li>
                 <?php // validar si es post tiene imagen destacada

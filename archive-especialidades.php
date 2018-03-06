@@ -1,5 +1,5 @@
 <?php 
-/* Template name: Categoria Blog */
+/* Template name: Categoria Especialidades */
 get_header(); ?>
 
     <!-- Page Content -->
@@ -10,12 +10,21 @@ get_header(); ?>
             <!-- Blog Entries Column -->
             <div class="col-md-12">
 
-<h2 class="titulo-portada">Especialidades</h2>
-    <!-- Loop de wordPress 
-    <?php if(have_posts() ) : while( have_posts() ) : the_post(); ?>
+<h2 class="titulo-portada">Nuestras Especialidades</h2>
+
+<!-- Nuevo WP Query -->
+<?php $servicios_medicos = new WP_Query(array(
+    'post_type' => 'especialidades',
+    'cat' => 2,
+    'posts_per_page'=> 5,
+    'order' => 'asc'
+));
+
+if ( $servicios_medicos->have_posts() ): ?>
     
         <!-- post -->
-            <div class="col-md-4 text-center">
+            <?php while( $servicios_medicos->have_posts() ): $servicios_medicos->the_post() ?>
+            <div class="col-md-3 text-center">
                 <div class="thumbnail staff">
 
                     <?php // validar si es post tiene imagen destacada
@@ -37,19 +46,10 @@ get_header(); ?>
         <?php _e('No hay post','apk_'); ?>
     
     <?php endif; ?>
-     Fin Loop de wordPress -->
+    <!-- Fin Loop de wordPress -->
 
+    <?php wp_reset_postdata(); ?><!-- Limpiar el loop -->
 
-
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="previous">
-                        <?php previous_posts_link('&larr; Previos'); ?>
-                    </li>
-                    <li class="next">
-                        <?php next_posts_link( 'Siguientes &rarr;'); ?>
-                    </li>
-                </ul>
 
             </div>
 
