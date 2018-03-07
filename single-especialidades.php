@@ -34,7 +34,7 @@
             </div>
 
         <!-- Side Bar -->
-        <?php get_sidebar(); ?>
+        <?php get_sidebar('especialidades'); ?>
 
         </div>
         <!-- /.row -->

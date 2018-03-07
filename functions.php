@@ -118,8 +118,8 @@ function ag_registrar_widgets() {
 	));
 
 	register_sidebar(array(
-		'name' => 'Widgets Testimonios',
-		'id' => 'sidebar_testimonios',
+		'name' => 'Widgets Especialidades',
+		'id' => 'sidebar_especialidades',
 		'before_widget' => '<div id="%2$s" class="widget">',
 		'after_widget' => '</div>',
 		'before_title' => '<h2 class="widget_title">',

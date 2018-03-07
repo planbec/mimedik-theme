@@ -1,5 +1,5 @@
 <?php 
-/* Template name: Socilitar cita */
+/* Template name: Formularios */
 get_header(); ?>
 
     <!-- Page Content -->
