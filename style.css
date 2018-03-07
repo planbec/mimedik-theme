@@ -21,6 +21,15 @@ http://astronautweb.co/snippet/font-awesome/
 @import url("css/bootstrap.min.css");
 @import url("css/modern-business.css");
 body{font:16px 'Lato', sans-serif;padding:0;margin:0;}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  -ms-transition: all .15s linear;
+  transition: all .15s linear;
+}
 .container{padding:2rem 0;}
 .bg-blue{background:#0099d2;width:100%;}
 .bg-gray{background:#363b42;width:100%;}
@@ -44,6 +53,18 @@ visibility:visible;padding:0px 0px 0px 0px;margin:2rem auto 1rem; text-align:cen
 #mega-menu-wrap-menu-redes #mega-menu-menu-redes > li.mega-menu-item > a.mega-menu-link { margin: 0 0.5rem; }
 .btn-primary{border-radius:5px;background-color:#97c943;box-shadow:inset 0 -18px 0 rgba(0,0,0,.07);border:0;padding:1rem 2rem;margin:2rem 0;text-align:center;text-decoration:none;text-shadow:1px 1px 2px #777;}
 .btn-primary:hover{background:#75a91c;box-shadow:0px 0px 9px 0px #fbd62c;}
+
+#mega-menu-wrap-menu-principal #mega-menu-menu-principal > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, 
+#mega-menu-wrap-menu-principal #mega-menu-menu-principal > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, 
+#mega-menu-wrap-menu-principal #mega-menu-menu-principal > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link
+{
+  text-decoration: none;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  -ms-transition: all .15s linear;
+  transition: all .15s linear;
+}
 
 .btn-home {
     border: 1px solid #dd1980 !important;

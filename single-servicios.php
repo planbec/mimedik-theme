@@ -8,7 +8,7 @@
 
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
-            <!-- h5><a href="/especialidades/" class="breadcrumb">Especialidades</a></h5 -->
+            <!-- h5><a href="/especialidades/" class="breadcrumb">Servicios</a></h5 -->
 
                 <!-- Loop de wordPress -->
                 <?php while( have_posts() ) : the_post(); ?>

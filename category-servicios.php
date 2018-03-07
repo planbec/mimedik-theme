@@ -10,14 +10,14 @@ get_header(); ?>
             <!-- Blog Entries Column -->
             <div class="col-md-12">
 
-<h2 class="titulo-portada">Nuestras Especialidades</h2>
+<h2 class="titulo-portada">Nuestros Servicios</h2>
 
 <!-- Nuevo WP Query -->
 <?php $servicios_medicos = new WP_Query(array(
     'post_type' => 'especialidades',
-    'cat' => 2,
-    'posts_per_page'=> 5,
-    'order' => 'asc'
+    'cat' => 3,
+    /*'posts_per_page'=> 5,*/
+    'order' => 'desc'
 ));
 
 if ( $servicios_medicos->have_posts() ): ?>

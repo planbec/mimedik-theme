@@ -3,20 +3,25 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Nuestro staff</h1>
-                <h2>Conoce m&aacute;s sobre nuestros colaboradores</h2>
-            </div>
-        </div>
-        <!-- /.row -->
 
+            <!-- Blog Entries Column -->
+            <div class="col-md-12">
 
-    <!-- Loop de wordPress -->
-    <?php if(have_posts() ) : while( have_posts() ) : the_post(); ?>
+<h2 class="titulo-portada">Nuestras Especialidades</h2>
+
+<!-- Nuevo WP Query -->
+<?php $servicios_medicos = new WP_Query(array(
+    'post_type' => 'especialidades',
+    'cat' => 2,
+    /*'posts_per_page'=> 5,*/
+    'order' => 'desc'
+));
+
+if ( $servicios_medicos->have_posts() ): ?>
     
         <!-- post -->
+            <?php while( $servicios_medicos->have_posts() ): $servicios_medicos->the_post() ?>
             <div class="col-md-3 text-center">
                 <div class="thumbnail staff">
 
@@ -27,6 +32,7 @@
 
                     <div class="caption">
                         <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+                        <p><?php the_excerpt();?></p>
                         <a href="<?php the_permalink(); ?>"><small>[ver mas]</small></a>
 
                     </div>
@@ -40,11 +46,14 @@
     <?php endif; ?>
     <!-- Fin Loop de wordPress -->
 
-<br style="clear:both">
+    <?php wp_reset_postdata(); ?><!-- Limpiar el loop -->
+
+
+            </div>
+
 
         </div>
         <!-- /.row -->
-
 
         <hr>
 

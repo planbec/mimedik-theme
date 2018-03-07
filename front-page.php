@@ -42,16 +42,6 @@
 </div>
 
 
-<!-- Servicios -->
-<div class="container servicios">
-    <div class="row">
-        <div class="col-lg-12">
-        <?php get_template_part('home','servicios' ); ?>
-        </div>
-    </div>
-</div>
-
-
 <!-- Testimonios -->
 <div class="bg-green">
     <div class="container testimonios">
