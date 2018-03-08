@@ -184,6 +184,24 @@ form.wp_accept_pp_button_form_classic input,
 form.wp_accept_pp_button_form_classic select{padding:0.5rem 1rem;border-radius:0.5rem;border:1px solid #ccc;}
 form.wp_accept_pp_button_form_classic input[type="image"]{border:0;margin-top:1rem;}
 
+/* Ampliada especialidades */
+img.size-tn_especialidades.wp-post-image {
+    border-radius: 50% !important;
+    background: #FFF;
+    padding: 1px;
+    border: 4px solid #f6f6f6;
+    width: 100%;
+}
+
+img.size-foto_especialidades.wp-post-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    padding: 1px;
+    border: 4px solid #f7f7f7;
+}
+
 
 .servicios ul.col-serv{box-sizing:border-box;float:left;width:20%;padding:0 1%;margin:2rem 0 3rem;}
 .servicios ul.col-serv li{font-size:100%;list-style:none;text-align:center;}
@@ -335,11 +353,21 @@ footer .copy{font-size:1.5rem;}
 .redes-footer{margin-top:1rem;}
 .staff .caption h4{font-size:2.3rem;}
 .staff .caption p{text-align:center;}
-.thumbnail{padding:0;border-radius:1rem;}
+.thumbnail{ padding:0; border-radius: 0; border: 0;}
 .thumbnail:hover{background:#f2f2f2;box-shadow:0px 0px 9px 0px #0075bb;}
-.thumbnail .caption{padding:2.5rem;color:#333;font-size:1.6rem;}
-.thumbnail .caption h4{margin:0.5rem 0;color:#0099d2;font-size:2.6rem;}
-.thumbnail img.wp-post-image{padding:0;border-radius:1rem 1rem 0 0;}
+.thumbnail .caption{padding:1.2rem 0 2.5rem;color:#333;font-size:1.6rem;}
+.thumbnail .caption h4{    
+    margin: 0.5rem 0;
+    color: #0099d2;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+.thumbnail img.wp-post-image{
+    background: #FFF;
+    padding: 1px;
+    border: 4px solid #f6f6f6;
+}
 aside h3.widget_title{
     color: #0099d2;
     text-transform: uppercase;
@@ -364,6 +392,31 @@ aside .widget ul.wid-contact li:before {
     font-size:2rem;
     padding-right:1rem;
 }
+
+aside .widget .fm-form {
+    padding: 1rem;
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+aside .widget .fm-form ul li { content:none; margin-bottom: 1rem; }
+aside .widget .fm-form ul li label { 
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+aside .widget .fm-form ul li input,
+aside .widget .fm-form ul li select,
+aside .widget .fm-form ul li textarea { 
+    border: 0;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+aside .widget .fm-form ul li:before { content:none; }
+
 
 aside .citas form{padding:2rem;background:#f2f2f2;border-radius:0.5rem;}
 aside .citas form input{border-radius:0.5rem;}

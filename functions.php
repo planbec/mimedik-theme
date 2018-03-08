@@ -77,7 +77,9 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size('home_servicios', 200, 140, true);
     add_image_size('categoria_blog', 750, 300, true);  
     add_image_size('blog_ampliada', 750, 500, true);
-    add_image_size('foto_grande', 1000, 600, true);  
+    add_image_size('foto_grande', 1000, 600, true); 
+    add_image_size('tn_especialidades', 200, 200, true); 
+    add_image_size('foto_especialidades', 500, 500, true); 
 }
 
 
@@ -122,8 +124,8 @@ function ag_registrar_widgets() {
 		'id' => 'sidebar_especialidades',
 		'before_widget' => '<div id="%2$s" class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h2 class="widget_title">',
-		'afet_title' => '</h2>'
+		'before_title' => '<h3 class="widget_title">',
+		'afet_title' => '</h3>'
 	));
 
 }

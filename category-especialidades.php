@@ -27,13 +27,12 @@ if ( $servicios_medicos->have_posts() ): ?>
 
                     <?php // validar si es post tiene imagen destacada
                     if( has_post_thumbnail() ) : ?>
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog_ampliada' );?></a>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'tn_especialidades' );?></a>
                     <?php endif ; ?>
 
                     <div class="caption">
                         <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-                        <p><?php the_excerpt();?></p>
-                        <a href="<?php the_permalink(); ?>"><small>[ver mas]</small></a>
+                        <a href="<?php the_permalink(); ?>"><small>Ver más <i class="fas fa-arrow-circle-right"></i></small></a>
 
                     </div>
                 </div>

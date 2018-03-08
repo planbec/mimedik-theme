@@ -13,19 +13,22 @@
                 <!-- Loop de wordPress -->
                 <?php while( have_posts() ) : the_post(); ?>
 
+                    <!-- post -->
+                    <h1> <?php the_title(); ?></h1>
+                    <hr>
+
+<div class="col-lg-6">
                     <!-- Preview Image -->
                     <?php // validar si es post tiene imagen destacada
                     if( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'blog_ampliada' );?>
+                        <?php the_post_thumbnail( 'foto_especialidades' );?>
                     <?php endif ; ?>
+</div>
 
-                    <!-- post -->
-                    <h1> <?php the_title(); ?></h1>
-
-                    <hr>
-
+<div class="col-lg-6">
                     <!-- Post Content -->
                     <p><?php the_content(); ?></p>
+</div>
 
                 <?php endwhile; ?>
                 <!-- Fin Loop de wordPress -->
