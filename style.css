@@ -337,7 +337,18 @@ footer .copy{font-size:1.5rem;}
 .container h3 {color:#0075bb;font-size:2.7rem;font-family:'Lato', arial, sans-serif;}
 .container h4 {color:#82b946;font-size:2.6rem;line-height:3rem;margin:3rem 0 2rem;}
 .container p{margin:2.5rem auto 3rem;text-align:justify;width:90%;}
-.container small{color:#999;font-size:1.5rem;line-height:3rem;}
+.container small {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  border: 1px solid #eee;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+}
+.container small:hover {
+  color: #999;
+  border: 1px solid #98ca43;
+}
 .container small.cat a{color:#98ca43;}
 .container hr{margin-top:0px;margin-bottom:20px;}
 .container ul li{list-style:circle; list-style-position: inside;}
