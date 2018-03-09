@@ -14,6 +14,7 @@
 <?php $servicios_medicos = new WP_Query(array(
     'post_type' => 'especialidades',
     'cat' => 2,
+    /*'category_name' => 'especialidades,servicios',*/
     /*'posts_per_page'=> 5,*/
     'order' => 'desc'
 ));
