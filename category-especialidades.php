@@ -9,7 +9,7 @@
             <div class="col-md-12">
 
 <h2 class="titulo-portada">Nuestras Especialidades</h2>
-
+<hr/>
 <!-- Nuevo WP Query -->
 <?php $servicios_medicos = new WP_Query(array(
     'post_type' => 'especialidades',
@@ -23,8 +23,8 @@ if ( $servicios_medicos->have_posts() ): ?>
     
         <!-- post -->
             <?php while( $servicios_medicos->have_posts() ): $servicios_medicos->the_post() ?>
-            <div class="col-md-3 text-center">
-                <div class="thumbnail staff">
+            <div class="col-md-2 text-center">
+                <div class="especialidades">
 
                     <?php // validar si es post tiene imagen destacada
                     if( has_post_thumbnail() ) : ?>
