@@ -331,6 +331,14 @@ footer .copy{font-size:1.5rem;}
 .piefooter h4 { color:#FFF !important; line-height: 5rem !important; margin: 0 !important; text-transform: uppercase;}
 .piefooter a { color:#FFF; }
 
+.especialidades {
+    margin: 4rem 0;
+}
+
+.fm-form ul li {
+    list-style: none !important;
+}
+
 .container{font-size:1.8rem;line-height:2.7rem;color:#666666 !important;}
 .container h1{color:#82b946;font:500 3rem'Lato', arial, sans-serif;text-transform:uppercase;}
 .container h2 {color:#2d3a4b;font-family:'Lato', arial, sans-serif;font-size:2.8rem;margin-bottom:3rem;}
