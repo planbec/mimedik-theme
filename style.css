@@ -203,7 +203,7 @@ img.size-foto_especialidades.wp-post-image {
     border: 4px solid #f7f7f7;
 }
 
-
+/*
 .servicios ul.col-serv{box-sizing:border-box;float:left;width:20%;padding:0 1%;margin:2rem 0 3rem;}
 .servicios ul.col-serv li{font-size:100%;list-style:none;text-align:center;}
 .servicios ul.col-serv li img{width:100%;height:auto;}
@@ -233,6 +233,7 @@ img.size-foto_especialidades.wp-post-image {
 .area-serv ul li a{color:#666666;}
 .area-serv ul li a:hover{color:#98ca43;text-decoration:none;}
 .area-serv ul li a:before{content:"\f101";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#ccc;font-size:2rem;padding-right:0.5em;}
+*/
 
 /* Citas */
 .container.citas { color:#5e6672; padding: 0;}
@@ -266,6 +267,10 @@ img.size-foto_especialidades.wp-post-image {
 
 /* Testimonios */
 .container.testimonios h2 { color:#FFF; }
+
+/* Staff ampliada */
+.staff-ampliada h3 { margin-left: 2rem; }
+
 
 aside {padding:0 2rem;}
 
@@ -347,7 +352,7 @@ footer .copy{font-size:1.5rem;}
 .container p{margin:2.5rem auto 3rem;text-align:justify;width:90%;}
 .container small {
   color: #999;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   border: 1px solid #eee;
   padding: 0.5rem 0.8rem;
@@ -374,22 +379,27 @@ footer .copy{font-size:1.5rem;}
 .redes-footer{margin-top:1rem;}
 .staff .caption h4{font-size:2.3rem;}
 .staff .caption p{text-align:center;}
-.thumbnail{ /*border:#f2f2f2;*/ padding:0; border-radius:2rem; border: 0;}
-.thumbnail:hover{border:1px solid #0099d2; /*box-shadow:0px 0px 9px 0px #0075bb;*/ }
+.thumbnail{
+  border: 0;
+  padding: 0;
+  border-radius: 0.3rem;
+}
+.thumbnail:hover{ border:0; border-bottom:3px solid #0099d2; /*box-shadow:0px 0px 9px 0px #0075bb;*/ }
 .thumbnail .caption{padding:1.2rem 0 2.5rem;color:#333;font-size:1.6rem;}
 .thumbnail .caption h4,
 .especialidades .caption h4{    
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 2rem;
     color: #0099d2;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 600;
+    line-height: 2.2rem;
   }
 .thumbnail img.wp-post-image{
     background: #FFF;
     padding: 1px;
     border: 4px solid #f5f5f5;
-    border-radius: 2rem;
+    border-radius:50%;
 }
 .especialidades .wp-post-image {
     width: 100%;

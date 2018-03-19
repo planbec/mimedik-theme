@@ -8,28 +8,31 @@
         <div class="row">
 
             <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
+            <div class="col-lg-8 staff-ampliada">
 
                 <!-- Blog Post -->
 
                 <!-- Loop de wordPress -->
                 <?php while( have_posts() ) : the_post(); ?>
+                <!-- post -->
+                <h1> <?php the_title(); ?></h1>
+                <hr>
 
-                    <!-- Preview Image -->
-                    <?php // validar si es post tiene imagen destacada
-                    if( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'blog_ampliada' );?>
-                    <?php endif ; ?>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- Preview Image -->
+                        <?php // validar si es post tiene imagen destacada
+                        if( has_post_thumbnail() ) : ?>
+                            <?php the_post_thumbnail( 'blog_ampliada' );?>
+                        <?php endif ; ?>
+                    </div>
 
-                    <!-- post -->
-                    <h1> <?php the_title(); ?></h1>
+                    <div class="col-lg-8">
+                        <!-- Post Content -->
+                        <p><?php the_content(); ?></p>
+                    </div>
+                </div>
 
-                    <hr>
-                    <!-- Date/Time -->
-                    <small><i class="fa fa-clock-o"></i> <?php the_time( get_option('date_format') ) ?></small>
-
-                    <!-- Post Content -->
-                    <p><?php the_content(); ?></p>
 
                 <?php endwhile; ?>
                 <!-- Fin Loop de wordPress -->

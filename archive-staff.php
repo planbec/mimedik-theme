@@ -17,7 +17,7 @@
     <?php if(have_posts() ) : while( have_posts() ) : the_post(); ?>
     
         <!-- post -->
-            <div class="col-md-3 text-center">
+            <div class="col-md-2 text-center">
                 <div class="thumbnail staff">
 
                     <?php // validar si es post tiene imagen destacada
