@@ -203,6 +203,8 @@ img.size-foto_especialidades.wp-post-image {
     border: 4px solid #f7f7f7;
 }
 
+.container.nosotros img{width:100%;}
+
 /*
 .servicios ul.col-serv{box-sizing:border-box;float:left;width:20%;padding:0 1%;margin:2rem 0 3rem;}
 .servicios ul.col-serv li{font-size:100%;list-style:none;text-align:center;}
@@ -214,7 +216,7 @@ img.size-foto_especialidades.wp-post-image {
 .container h3.copy-servicios{font-size:2rem;color:#999;line-height:2.7rem;float:left;margin-bottom:4rem;text-align:right;text-transform:uppercase;width:88%;}
 .container h3.copy-enlace{text-align:right;float:left;width:60%;margin-left:15%;text-transform:uppercase;font-size:2.2rem;line-height:2.8rem;}
 .container.nosotros{padding:0;}
-.container.nosotros img{width:100%;}
+
 .container.nosotros ul{margin:3rem 0;padding:0;}
 .container.nosotros ul li{list-style:none;color:#FFF;font-size:2.4rem;margin:3rem 0;text-align:center;line-height:3.5rem;}
 .container.nosotros ul li:before{content:"\f058";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:inherit;color:#57616f;font-size:2.5rem;padding-right:0.5em;}
